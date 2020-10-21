@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --main-bgcolor: #1e272e;
+  --main-color: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+.row {
+  margin: 0;
+}
+.main_menu {
+  background-color: var(--main-bgcolor);
+}
+.navbar {
+  color: white;
+  background-color: var(--main-bgcolor);
+  padding: 2rem 0;
+}
+.navbar a {
+  color: white;
+  font-size: 1.8rem;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar li {
+  margin-left: 2rem;
+}
+
+.navbar-toggler {
+  background-color: grey;
+}
+.fa-snowflake {
+  color: var(--main-color);
+  transition: all linear;
+  animation: rot 2s linear infinite;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(330deg);
+  }
+}
+.main_temp_section {
+  background: #aaffa9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #11ffbd,
+    #aaffa9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #11ffbd,
+    #aaffa9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+.main_header_left {
+  display: flex;
+  height: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_header_left p {
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.main_header_right {
+  display: flex;
+  height: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_header_left button {
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0, 8px, 6px, -6px black;
+  outline: none;
+}
+.main_header_left button:hover {
+  box-shadow: 0, 8px, 6px, -6px var(--main-color);
+}
+
+.main_temp_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"] {
+  border-radius: 3rem;
+  width: 100%;
+  outline: none;
+
+  color: white;
+}
+.fa {
+  color: var(--main-color);
+  font-size: 10rem;
+}
+.myfooter {
+  background-color: var(--main-bgcolor);
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.data_hide {
+  display: none;
+}
+#tempSection {
+  background-color: var(--main-bgcolor);
+}
+@media (max-width: 768px) {
+  .main_header_left {
+    margin-top: 4rem;
+  }
+  .main_header_right {
+    margin-top: -222px;
+  }
+}

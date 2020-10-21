@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid main_temp_section mt-2">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label>Enter City Name</label><br />
+                        <input id="cityInput" type="text" placeholder="enter  your city  name" class="form-control" />
+                        <input id="addCity" type="submit" class="btn btn-success mt-3" placeholder="enter your city" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 mx-auto mt-5">
+                <h2 id="error"></h2>
+                <div class="today d-flex flex-row justify-content-around">
+                    <h4 id="todaySpace" class="bg-light text-dark  "></h4>
+                    <h4 id="todayDate" class="bg-light text-dark  "></h4>
+                </div>
+                <div class="data_hide d-flext flex-column justify-content-center align-items-center " id="tempSection">
+                    <h2 id="citySpace" class="pt-5 text-light text-center"></h2>
+
+                    <p id="icons" class="text-center"></p>
+                    <p class="text-center text-light "><span id="tempText"></span><sup>o</sup>C</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
